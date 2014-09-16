@@ -4,8 +4,14 @@ import java.util.logging.Logger;
 
 public class Tripwire {
 
-	public static void main(String[] args) {
+	private static boolean running;
+	
+	public Tripwire() {
 		
+	}
+	
+	public static boolean isRunning() {
+		return running;
 	}
 	
 	public static String getVersion() {
@@ -14,5 +20,9 @@ public class Tripwire {
 	
 	public static Logger getLogger() {
 		return null;
+	}
+	
+	public static void main(String[] args) {
+		new Tripwire();
 	}
 }
